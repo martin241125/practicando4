@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./card.css";
 
 const Card = () => {
   const [add, setAdd] = useState(false);

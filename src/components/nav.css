@@ -1,0 +1,32 @@
+.nav {
+  width: 100%;
+  border: 1px solid rgb(91, 13, 163);
+  margin-top: 3px;
+  padding: 3px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-container li {
+  flex-direction: row;
+  display: flex;
+  padding: 3px;
+
+  margin: 1px;
+}
+
+.nav-container li:hover {
+  cursor: pointer;
+  background-color: rgb(160, 119, 197);
+  transition: 0.5s;
+  border-radius: 15px;
+  text-shadow: 1px 1px 2px rgb(211, 9, 76);
+  font: bold;
+  margin: 1px;
+}
