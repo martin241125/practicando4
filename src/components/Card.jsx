@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./card.css";
+import imagenes from "../assets/imagenes";
 
-const Card = () => {
+const Card = (props) => {
   const [add, setAdd] = useState(false);
   const text = add ? "Quitar" : "Agregar";
 
@@ -10,19 +11,19 @@ const Card = () => {
   };
 
   return (
-    <div className="containergit">
+    <div className="container">
       <article className="card-container">
-        <header>
+        <section>
           <img
-            src="https://a.wattpad.com/useravatar/Daian_502.256.248472.jpg"
-            alt=""
+            src={props.imagenes}
+            alt="turismo corrientes"
             className="image"
           />
           <div className="text-container">
-            <strong>Saga de Geminis</strong>
-            <span>Caballero dorado</span>
+            <strong>{props.nombre}</strong>
+            <span>{props.provincia}</span>
           </div>
-        </header>
+        </section>
         <aside className="buton-container">
           <button onClick={handleClick}>{text}</button>
         </aside>
